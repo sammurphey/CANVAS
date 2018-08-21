@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>ANIM@TE</title>
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="toolbar">
+        <div id="rad" class="tool_item">
+            <span class="tool_name">Brush</span>
+            <span class="tool">size</span>
+            <span id="radval">10</span>
+            <div class="control_box">    
+                <div id="incrad" class="radcontrol">^</div>
+                <div id="decrad" class="radcontrol">v</div>
+            </div>
+        </div>
+        <div id="colors" class="tool_item">
+            <span class="tool">color</span>
+            <div id="selected_color" class="selected_color"></div>
+        </div>
+        <div class="click_off" id="click_off"></div>
+        <div class="palette" id="palette">
+        </div>
+    </div>
+    <canvas id="canvas">
+        You're browser is too old to render the content.
+        <br/>
+        Please consider use Google Chrome.
+    </canvas>
+    <script src="main.js"></script>
+    <script src="radius.js"></script>
+    <script src="colors.js"></script>
+</body>
+</html>

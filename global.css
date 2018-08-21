@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    -moz-box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    
+    
+    
+}
+
+html, body {
+    margin: 0px;
+    color: #333;
+    text-transform: lowercase;
+    cursor: crosshair;
+}
+
+canvas {
+    display: block;
+}
+
+#toolbar {
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    position: fixed;
+    top: 0;
+    font-size: 150%;
+    line-height: 100px;
+    cursor: default;
+}
+.tool {
+    float: left;
+}
+.tool_name {
+    text-transform: capitalize;
+    color: #4398e9;
+    font-weight: bold;
+    float: left;
+    margin-right: 20px;
+    text-shadow: 3px 3px 5px #ccc;
+}
+.tool_item {
+    margin-top: -50px;
+    float: left;
+}
+.control_box {
+    float: left;
+    z-index: 999;
+}
+.radcontrol {
+    font-size: 66%;
+    height: -10px;
+    font-size: 75%;
+    margin-left: -23px;
+    margin-top: 35px;
+    line-height: 0px;
+    text-align:center;
+    padding: 0px 2px;
+    
+}
+.radcontrol:active {
+    background: #ffdd54;
+    color: #333;
+}
+#radval {
+    font-size: 80%;
+    color: #ccc;
+    float: left;
+    margin-top: 2px;
+    margin-left: 15px;
+    z-index: 2;
+}
+#colors {
+    float: left;
+    margin-left: 40px;
+}
+.selected_color {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: none;
+    float:left;
+    margin-left: 15px;
+    margin-top: 35px;
+    background: #000;
+    box-shadow: 3px 3px 5px #ccc!important; 
+    cursor: url(eye_dropper.png) 0 0, auto;
+}
+.active {
+    min-width: 32px;
+    min-height: 32px;
+    margin-left: 14px;
+    margin-top: 34px;
+    box-shadow: 3px 3px 5px #ccc!important; 
+}
+
+.palette {
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    text-align: center;
+    background: #fff;
+    width: 0px;
+    height: 0px;
+    display:inline-block;
+    margin-top: 30px;
+    margin-left: -115px;
+    opacity: 0;
+    box-shadow: 0px 5px 5px #ccc!important; 
+    z-index: 999;
+    position: absolute;
+    padding: 4px;
+}
+
+.palette.open {
+    opacity: 1.0!important;
+    width: 208px;
+    height: 96px;
+}
+.click_off {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+.click_off.open {
+    display: block;
+}
+
+.palette_item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0px;
+    padding: 0px;
+    float:left;
+    position: relative;
+    cursor: url(eye_dropper.png) 0 0, auto;
+}
